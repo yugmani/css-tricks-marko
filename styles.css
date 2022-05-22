@@ -1,3 +1,56 @@
-body {
-  background: orange;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrappers {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  background-color: whitesmoke;
+}
+
+.text-truncate {
+  background-color: #fff;
+}
+
+.tile {
+  width: 300px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid gray;
+  background-color: lightyellow;
+  padding: 15px;
+  line-height: 1.5;
+}
+
+.line {
+  background-color: #4776e6;
+  background: -webkit-linear-gradient(to right, #4776e6, #8e54e9);
+  background: linear-gradient(to right, #4776e6, #8e54e9);
+  color: white;
+  padding: 5px;
+}
+
+.overflow-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.line-clamp-two {
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp-four {
+  /* display: -webkit-box;
+  -webkit-box-orient: vertical; */
+  -webkit-line-clamp: 3;
 }

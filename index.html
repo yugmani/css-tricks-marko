@@ -1,11 +1,38 @@
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <script src="script.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    <h1>Hello there!</h1>
-    <a href="/me.html">My other page</a>
+    <div class="wrappers">
+      <h1>Truncate Text</h1>
+      <div class="text-truncate">
+        <div class="tile">
+          <p>Ellipsis:</p>
+          <div class="line overflow-ellipsis">
+            This text is truncated, because there is not enough space to display
+            it completely.
+          </div>
+        </div>
+        <div class="tile">
+          <p>This text is trimmed to 3 lines:</p>
+          <div class="line line-clamp line-clamp-two">
+            You can use <code>-webkit-line-clamp</code> property to truncate the
+            text to the specific number of lines. An ellipsis will be shown at
+            the point where the text is clamped.
+          </div>
+        </div>
+        <div class="tile">
+          <p>This text is trimmed to 4 lines</p>
+          <div class="line line-clamp line-clamp-four">
+            You can use <code>-webkit-line-clamp</code> property to truncate the
+            text to the specific number of lines. An ellipsis will be shown at
+            the point where the text is clamped.
+          </div>
+        </div>
+      </div>
+      <a href="https://markodenic.com/css-tips/">My other page</a>
+    </div>
   </body>
 </html>
